@@ -1,0 +1,66 @@
+body {
+    margin: auto;
+}
+/* Homepage Section */
+#home_page {
+    margin: 0%;
+    background-image: url(/images/green-binary-bg1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    color: white;
+}
+/* Navigation Bar <ul> */
+#navigation_bar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    position: fixed;
+    right: 0%;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar Elements <li> */
+#navigation_bar li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+/* Navigation Bar Elements Value <a> */
+#navigation_bar li a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+/* Hovering Over Navigation Bar Element */
+#navigation_bar li:hover{
+    background-color: purple;
+    border-radius: 25px;
+    a {
+        color: white;
+    }
+}
+/* Clicking On Navigation Bar Element */
+#navigation_bar li a:active {
+    background-color: purple;
+    border-radius: 25px;
+    a {
+        color: white;
+    }
+}
+/* I'm Ahad Alkozai */
+#title1_1 {
+    margin: 0;
+    font-size: 70px;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+/* A Computer Science Student*/
+#title1_2 {
+    margin: 0;
+    font-size: 30px;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
