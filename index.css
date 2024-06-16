@@ -7,7 +7,7 @@ body { margin: auto; background-color: black; }
 .title { font-family:"Roboto Slab"; position: relative; }
 
 /* Homepage Section */
-#home_page {
+#home-page {
     background-image: url(/images/green-binary-bg1.jpeg);
     background-position: center;
     background-size: 100vw;
@@ -16,7 +16,7 @@ body { margin: auto; background-color: black; }
 }
 
 /* Navigation Bar <ul> */
-#navigation_bar {
+#navigation-bar {
     background-color: rgba(0, 0, 0, 0.5);
     list-style-type: none;
     border-radius: 25px;
@@ -27,10 +27,10 @@ body { margin: auto; background-color: black; }
 }
 
 /* Navigation Bar Elements <li> */
-#navigation_bar li { display: inline-block; }
+#navigation-bar li { display: inline-block; }
 
 /* Navigation Bar Elements Value <a> */
-#navigation_bar li a {
+#navigation-bar li a {
     font-family: "Jaini Purva";
     text-decoration: none;
     display: inline-block;
@@ -41,7 +41,7 @@ body { margin: auto; background-color: black; }
 }
 
 /* Hovering Over Navigation Bar Element */
-#navigation_bar li:hover{
+#navigation-bar li:hover{
     background-color: rgb(125, 3, 3);
     border-radius: 25px;
     a {
@@ -50,7 +50,7 @@ body { margin: auto; background-color: black; }
 }
 
 /* Clicking On Navigation Bar Element */
-#navigation_bar li a:active {
+#navigation-bar li a:active {
     background-color: rgb(125, 3, 3);
     border-radius: 25px;
     a {
@@ -59,37 +59,37 @@ body { margin: auto; background-color: black; }
 }
 
 /* Title: "I'm Ahad Alkozai" */
-#Ahad_Alkozai_title {
+#Ahad-Alkozai-title {
     font-size: 5vw;
     left: 10%;
     top: 20%;
 }
 
 /* Title: "A Computer Science Student" */
-#compsci_student_title {
+#compsci-student-title {
     font-size: 2vw;
     left: 10%;
     top: 20%;
 }
 
 /* Project-page Section */
-#projects_page {
+#projects-page {
     color: white;
     background: linear-gradient(0deg, rgb(0, 12, 0) 0%, rgb(0, 18, 7)32%, rgb(0, 23, 9) 100%);
-    height: 50vw;
+    height: 80vw;
 }
 
 /* Title: "Projects" */
-#projects_page_title {
+#projects-page-title {
     font-size: 4vw;
     left: 10%;
-    top: 5%;
+    top: 3%;
     margin-bottom: 5vw;
 }
 
 /* project Class for all listed Projects*/
 .project {
-    background-color: rgb(19, 184, 104);
+    background-color: rgb(95, 33, 131);
     border-radius: 25px;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -97,17 +97,61 @@ body { margin: auto; background-color: black; }
     margin-bottom: 4vw;
 }
 
-/* project_title Class */
-.project_title {
+/* project-title Class */
+.project-title {
     font-family:"Roboto Slab";
     position: relative;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     left: 3%;
     top: 5%;
+    margin-bottom: 1vw;
 }
 
 /* Python Game Project */
-#project_python_game { height: 25vw }
+#project-python-game { height: 30vw }
+
+/* Python Game Image */
+#project-python-game-img { 
+    border-radius: 25px;
+    position: relative;
+    height: 25vw;
+    left: 32.5vw;
+    bottom: 4.5vw;
+}
 
 /* Personal Website Project */
-#project_personal_website { height: 25vw }
+#project-personal-website { height: 30vw }
+
+/* Personal Website Image */
+#project-personal-web-img { 
+    border-radius: 25px;
+    position: relative;
+    height: 25vw;
+    left: 35vw;
+    bottom: 4.5vw;
+}
+
+/* Project Made With */
+#project-game-made {
+    position: relative;
+    font-size: 1.2vw;
+    display: inline;
+    left: 3%;
+}
+
+/* Project Logos Class */
+.logo { height: 2.5vw; border-radius: 5px; }
+
+/* Project Python Logo */
+#project-python-logo {
+    position: relative;
+    left: 3.5%;
+    top: 0.8vw;
+}
+
+/* Project HTML Logo */
+#project-html-logo {
+    position: relative;
+    left: 3.5%;
+    top: 0.8vw;
+}
