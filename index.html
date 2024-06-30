@@ -1,90 +1,41 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
         <!-- Meta Data -->
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- Title -->
         <title>Ahad's Website</title>
 
-        <!-- CSS Doc -->
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="index.css">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&family=LXGW+WenKai+Mono+TC&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-
     </head>
-
     <body>
-        <!-- Home Page Contents -->
-        <div id="home-page" class="margin0"> 
+        <section id="home-page">
 
-            <!-- Navigation Bar -->
-            <ul id="navigation-bar" class="margin0">
-                <li> <a href="">Home</a> </li>
-                <li><a href="">Projects</a></li>
-                <li> <a href="">Skills</a> </li>
-                <li> <a href="">Experience</a> </li>
-                <li> <a href="">Biography</a> </li>
-                <li> <a href="">Contact</a> </li>
-            </ul>
-            
-            <!-- Page Titles -->
-            <h1 id="Ahad-Alkozai-title" class="margin0 title">I'm Ahad Alkozai</h1>
-            <h1 id="compsci-student-title" class="margin0 title">A Computer Science Student</h1>
+            <nav>
+                <ul id="nav-bar">
+                    <li id="nav-first"><a href="">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Biography</a></li>
+                    <li id="nav-last"><a href="">Contact</a></li>
+                </ul>
+            </nav>
 
-        </div>
+            <video id="home-bg" autoplay loop muted>
+                <source src="/videos/home-page-bg.mov">
+            </video>
 
-        <!-- Projects Page Contents -->
-        <div id="projects-page" class="margin0">
-
-            <!-- Page Title -->
-            <h1 id="projects-page-title" class="margin0 title">Projects</h1>
-            
-            <!-- Python Project -->
-            <div id="project-python-game" class="project">
-                
-                <!-- Project Title -->
-                <h2 id="project-python-game-title" class="margin0 project-title">Python Game</h2>
-
-                <!-- "Made with" Section-->
-                <div class="margin0">
-                    <p id="project-game-made" class="margin0 title">Made with:</p>
-                    <!-- Python Logo -->
-                    <img id="project-python-logo" class="logo" src="images/python-logo.jpeg">
-                </div>
-                
-                <!-- Image of Project -->
-                <img id="project-python-game-img" src="images/python-game.png">
-
+            <div id="home-titles">
+                <h1 id="title-ahad-alkozai" class="title">I'm Ahad Alkozai</h1>
+                <h2 id="title-cs-student" class="title">A Computer Science Student</h2>
             </div>
             
-            <!-- Website Project -->
-            <div id="project-personal-website" class="project">
-                
-                <!-- Project Title -->
-                <h2 id="project-personal-website-title" class="margin0 project-title">Personal Website</h2>
-
-                <!-- "Made with" Section-->
-                <div class="margin0">
-                    <p id="project-game-made" class="margin0 title">Made with:</p>
-                    <!-- HTML Logo -->
-                    <img id="project-html-logo" class="logo" src="images/html-logo.png">
-                    <!-- CSS Logo -->
-                    <img id="project-html-logo" class="logo" src="images/css-logo.png">
-                    <!-- JS Logo -->
-                    <img id="project-html-logo" class="logo" src="images/js-logo.png">
-                </div>
-
-                <!-- Image of Project -->
-                <img id="project-personal-web-img" src="images/personal-website.png">
-
-            </div>
-
-        </div>
-        
+        </section>
     </body>
-
 </html>
