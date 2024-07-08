@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(69, 9, 81);
+    background-color: rgb(25, 4, 29);
     overflow-x: hidden;
 }
 
@@ -62,7 +62,7 @@ nav {
 }
 
 #nav-bar a:hover {
-    background-color: rgb(112, 20, 9);
+    background-color: rgb(154, 31, 18);
     border-radius: 20px;
 }
 
@@ -83,4 +83,132 @@ nav {
 
 #title-cs-student {
     font-size: 30px;
+}
+
+#project-page {
+    color: white;
+    height: 1000px;
+}
+
+#title-projects {
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+}
+
+#projects {
+    /* border: 10px;
+    border-color: black;
+    border-style: solid; */
+
+    display: grid;
+    grid-template-rows: repeat(3, 400px);
+    grid-template-columns: minmax(600px, 1000px);
+    justify-content: center;
+    grid-gap: 60px;
+    top: 15%;
+    
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.proj-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    top: 7%;
+    left: 5%;
+}
+
+.proj-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 9%;
+    left: 5%;
+    column-gap: 20px;
+}
+
+.proj-info {
+    top: 4%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+}
+
+.proj-img {
+    border-radius: 25px;
+    width: 500px;
+    bottom: 10%;
+}
+
+.proj-footer {
+    display: flex;
+    width: 180px;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 25px;
+    left: 5%;
+}
+
+.github-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Roboto Slab";
+    left: 4%;
+}
+
+.github-logo {
+    width: 25px;
+}
+
+.proj-title {
+    font-size: 25px;
+}
+
+.proj-made-with {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.proj-made-with-title {
+    font-size: 17px;
+    top: 5px;
+}
+
+.proj-logo {
+    width: 35px;
+    border-radius: 5px;
+}
+
+#dream-dimension-proj {
+    background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+    border-radius: 25px;
+    font-size: 50px;
+    .proj-footer {
+        border-color: rgb(213, 166, 229);
+        bottom: 5%;
+    }
+}
+
+#my-web-proj {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    font-size: 50px;
+    .proj-footer {
+        border-color: rgb(229, 166, 166);
+        width: 150px;
+        bottom: 10%;
+    }
+}
+
+#proj-2 {
+    background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
 }
