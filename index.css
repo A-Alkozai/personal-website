@@ -11,6 +11,7 @@ body {
 
 #home-page {
     color: white;
+    display: flex;
 }
 
 #home-bg {
@@ -87,29 +88,27 @@ nav {
 
 #project-page {
     color: white;
-    height: 1000px;
-}
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
 
-#title-projects {
-    position: absolute;
-    top: 2.5%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 50px;
-}
-
-#projects {
     /* border: 10px;
     border-color: black;
     border-style: solid; */
+}
 
-    display: grid;
+#title-projects {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#projects {
+    display: grid;  
     grid-template-rows: repeat(3, 400px);
     grid-template-columns: minmax(600px, 1000px);
     justify-content: center;
     grid-gap: 60px;
-    top: 15%;
-    
 }
 
 .project {
@@ -133,6 +132,7 @@ nav {
     top: 9%;
     left: 5%;
     column-gap: 20px;
+    height: 280px;
 }
 
 .proj-info {
@@ -143,9 +143,12 @@ nav {
 }
 
 .proj-img {
-    border-radius: 25px;
-    width: 500px;
-    bottom: 10%;
+    position: absolute;
+    border-top-left-radius: 25px;
+    height: 370px;
+    width: 530px;
+    right: 0%;
+    bottom: 0%;
 }
 
 .proj-footer {
@@ -205,10 +208,19 @@ nav {
     .proj-footer {
         border-color: rgb(229, 166, 166);
         width: 150px;
-        bottom: 10%;
+        bottom: 5%;
     }
 }
 
-#proj-2 {
-    background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+#fitness-app-proj {
+    background-image: linear-gradient( 135deg, #58c982 10%, #0E5CAD 100%);
+    /* background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%); */
+    /* background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%); */
+    /* background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%); */
+    /* background-image: linear-gradient( 135deg, #FEC163 10%, #DE4313 100%); */
+    /* background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%); */
 }
+
+
+
+
