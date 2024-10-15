@@ -295,5 +295,65 @@ nav {
     box-shadow: 12px 12px rgb(0, 20, 111);
 }
 
+#about-me-page {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    row-gap: 50px;
+    margin-inline: 200px;
+}
 
+#title-about-me {
+    text-align: center;
+    font-size: 50px;
+}
 
+#about-me-pic {
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 75px;
+    border-style: solid;
+    border-width: 4px;
+    box-shadow: 10px 10px #9607a6;
+    border-color: black;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+}
+
+#about-me-title {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-family: "Ubuntu";
+    font-size: 40px;
+}
+
+.about-me-main {
+    font-family: "Ubuntu";
+    font-size: 20px;
+}
+
+#contact-page {
+    color: white;
+}
+
+#title-contact {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#contact-info {
+    font-family: "Ubuntu";
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
