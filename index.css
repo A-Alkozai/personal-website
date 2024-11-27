@@ -3,18 +3,79 @@
     padding: 0;
     margin: 0;
 }
-
 body {
-    background-color: rgb(25, 4, 29);
+    /* background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138)); */
+    background: linear-gradient(rgb(37, 33, 70), rgb(62, 41, 112), rgb(88, 47, 157), rgb(115, 50, 204), rgb(143, 52, 254));
+    background-repeat: no-repeat;
     overflow-x: hidden;
 }
 
 #home-page {
     color: white;
+    height: 800px;
+}
+nav {
+    position: fixed;
+    top: 1.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 1;
+}
+#nav-bar {
     display: flex;
+    list-style-type: none;
+    justify-content: center;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.25);
+
+}
+#nav-bar li {
+    display: inline;
+}
+#nav-bar li a {
+    text-decoration: none;
+    text-align: center;
+    min-width: max-content;
+    display: block;
+    color: rgb(255, 255, 255);
+    font: 23px "Roboto Slab";
+    padding: 0.45vw 1.2vw;
+}
+#nav-bar a:hover {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+#home-titles {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+#title-ahad-alkozai {
+    font: 55px "Roboto Slab"
+}
+#title-cs-student {
+    font: 35px "Roboto Slab"
 }
 
-#home-bg {
+
+
+
+
+
+
+
+/* #home-bg {
     object-fit: cover;
     width: 100vw;
     height: 700px;
@@ -92,9 +153,9 @@ nav {
     flex-direction: column;
     row-gap: 75px;
 
-    /* border: 10px;
+    border: 10px;
     border-color: black;
-    border-style: solid; */
+    border-style: solid;
 }
 
 #title-projects {
@@ -214,11 +275,11 @@ nav {
 
 #fitness-app-proj {
     background-image: linear-gradient( 135deg, #58c982 10%, #0E5CAD 100%);
-    /* background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%); */
-    /* background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%); */
-    /* background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%); */
-    /* background-image: linear-gradient( 135deg, #FEC163 10%, #DE4313 100%); */
-    /* background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%); */
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    background-image: linear-gradient( 135deg, #FEC163 10%, #DE4313 100%);
+    background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
 }
 
 #skill-page {
@@ -356,4 +417,4 @@ nav {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
-}
+} */
