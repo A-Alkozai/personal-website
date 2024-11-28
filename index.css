@@ -173,7 +173,7 @@ nav {
     }
     .proj-made-with {
         display: flex;
-        padding: 5px 15px;
+        padding: 5px 10px;
         flex-flow: row wrap;
         column-gap: 10px;
         max-width: max-content;
