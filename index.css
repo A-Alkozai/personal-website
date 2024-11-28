@@ -5,12 +5,12 @@
 }
 body {
     /* background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138)); */
-    background: linear-gradient(rgb(37, 33, 70), rgb(62, 41, 112), rgb(88, 47, 157), rgb(115, 50, 204), rgb(143, 52, 254));
-    background-repeat: no-repeat;
+    /* background: linear-gradient(rgb(37, 33, 70), rgb(62, 41, 112), rgb(88, 47, 157), rgb(115, 50, 204), rgb(143, 52, 254)); */
     overflow-x: hidden;
 }
 
 #home-page {
+    background: linear-gradient(rgb(20, 26, 47), rgb(20, 35, 48), rgb(18, 40, 45));
     color: white;
     height: 800px;
 }
@@ -31,7 +31,6 @@ nav {
     backdrop-filter: blur(40px);
     border: 2px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.25);
-
 }
 #nav-bar li {
     display: inline;
@@ -55,6 +54,7 @@ nav {
     left: 100px;
     display: flex;
     flex-direction: column;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(40px);
     border-radius: 10px;
@@ -68,7 +68,161 @@ nav {
     font: 35px "Roboto Slab"
 }
 
+.title {
+    font: 50px "Roboto Slab";
+}
 
+#projects-page {
+    color: white;
+    /* background-color: rgb(18, 40, 45); */
+    background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138));
+
+}
+#title-projects {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#projects {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    row-gap: 50px;
+}
+.project-mini {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 50px;
+    font: 18px "Roboto Slab";
+    .proj-mini-1, .proj-mini-2 {
+        padding: 25px 25px;
+        backdrop-filter: blur(40px);
+        background-color: rgb(0, 0, 0, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+        width: 450px;
+        height: 330px
+    }
+    .proj-header {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 12px;
+    }
+    .proj-title {
+        text-indent: 8px;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+    .proj-made-with {
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 10px;
+        max-width: max-content;
+        padding: 5px 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+    .proj-logo {
+        width: 35px;
+        border-radius: 5px;
+    }
+    .proj-img {
+        width: 445px;
+        height: 220px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+    }
+}
+.project {
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+    font: 25px "Roboto Slab";
+    width: 1000px;
+    height: 350px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    padding: 25px 25px;
+    .proj-logo {
+        width: 40px;
+        border-radius: 10px;
+    }
+    .proj-img {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 480px;
+    }
+}
+.project .proj-header {
+    display: flex;
+    flex-flow: column;
+    .proj-title {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        padding-bottom: 12px;
+    }
+    .proj-made-with {
+        display: flex;
+        padding: 5px 15px;
+        flex-flow: row wrap;
+        column-gap: 10px;
+        max-width: max-content;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+}
+.proj-info {
+    font: 17px "Roboto Slab";
+    max-width: 500px;
+    height: 170px;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+.proj-footer {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    column-gap: 10px;
+    .footer {
+        display: flex;
+        height: 45px;
+        flex-flow: row;
+        align-items: center;
+        box-shadow: 10px 10px 10px rgb(0, 0, 0, 0);
+        background-color: rgb(0, 0, 0, 0.2);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+    .github-logo {
+        padding: 5px 0px;
+        padding-left: 5px;
+        width: 35px;
+    }
+    .link {
+        text-decoration: none;
+        font: 20px "Roboto Slab";
+        padding: 5px 5px;
+        color: white;
+    }
+    .github-link {
+        padding-right: 10px;
+    }
+}
 
 
 
