@@ -4,7 +4,7 @@
     margin: 0;
 }
 body {
-    /* background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138)); */
+    background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138));
     /* background: linear-gradient(rgb(37, 33, 70), rgb(62, 41, 112), rgb(88, 47, 157), rgb(115, 50, 204), rgb(143, 52, 254)); */
     overflow-x: hidden;
 }
@@ -70,18 +70,17 @@ nav {
 
 .title {
     font: 50px "Roboto Slab";
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 52px;
 }
 
 #projects-page {
     color: white;
     /* background-color: rgb(18, 40, 45); */
-    background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138));
+    /* background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138)); */
+    padding-bottom: 50px;
 
-}
-#title-projects {
-    padding-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
 }
 #projects {
     display: flex;
@@ -93,7 +92,7 @@ nav {
     display: flex;
     flex-flow: row nowrap;
     column-gap: 50px;
-    font: 18px "Roboto Slab";
+    font: 23px "Roboto Slab";
     .proj-mini-1, .proj-mini-2 {
         padding: 25px 25px;
         backdrop-filter: blur(40px);
@@ -129,6 +128,8 @@ nav {
     .proj-logo {
         width: 35px;
         border-radius: 5px;
+        padding: 2px 2px;
+        background-color: rgb(0, 0, 0, 1);
     }
     .proj-img {
         width: 445px;
@@ -153,6 +154,7 @@ nav {
     .proj-logo {
         width: 40px;
         border-radius: 10px;
+        background-color: rgba(0, 0, 0, 1);
     }
     .proj-img {
         border-top-left-radius: 20px;
@@ -224,6 +226,40 @@ nav {
     }
 }
 
+#skills-page {
+    /* background-color: rgb(16, 147, 138); */
+    color: white;
+    padding-bottom: 50px;
+    height: 1000px;
+}
+#skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1050px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.3);
+    .skill-img {
+        width: 90px;
+        border-radius: 30px;
+        padding: 10px 10px;
+        background-color: rgba(0, 0, 0, 0.55);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);   
+        border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    .skill-name {
+        text-align: center;
+        font: 20px "Roboto Slab";
+    }
+}
 
 
 
