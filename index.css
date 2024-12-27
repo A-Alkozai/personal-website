@@ -5,16 +5,47 @@
 }
 body {
     background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138));
+    background: linear-gradient(to right, #136a8a, #267871);
     /* background: linear-gradient(rgb(37, 33, 70), rgb(62, 41, 112), rgb(88, 47, 157), rgb(115, 50, 204), rgb(143, 52, 254)); */
     overflow-x: hidden;
+    /* background: #001122; */
+    /* background-image: url("/images/bg.png");
+    background-size: cover; */
 }
 html {
     scroll-behavior: smooth;
 }
-#home-page {
-    background: linear-gradient(rgb(20, 26, 47), rgb(20, 35, 48), rgb(18, 40, 45));
-    color: white;
+canvas {
+    z-index: 0;
+    position: absolute;
+}
+#particles-js {
     height: 800px;
+    z-index: 0;
+    /* Dark Blue */
+    background-color: #001122;
+
+    /* Pink */
+    /* background-color: #1E0022; */
+
+    /* Purple */
+    /* background-color: #1B0033; */
+
+    /* Red */
+    /* background-color: #2E0000; */
+
+    /* Blue */
+    /* background-color: #0A1C1C; */
+
+
+    /* background: linear-gradient(rgb(37, 33, 70), rgb(36, 24, 67), rgb(42, 22, 77), rgb(48, 18, 91), rgb(56, 15, 106)); */
+    /* background: linear-gradient(rgb(30, 39, 73), rgb(35, 64, 89), rgb(36, 91, 105), rgb(32, 118, 121), rgb(16, 147, 138)); */
+    
+}
+#home-page {
+    /* background: linear-gradient(rgb(20, 26, 47), rgb(20, 35, 48), rgb(18, 40, 45)); */
+    height: 800px;
+    color: white;
 }
 nav {
     position: fixed;
@@ -48,7 +79,8 @@ nav {
 }
 #nav-bar a:hover {
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.45);
+    cursor: pointer;
 }
 #home-titles {
     position: absolute;
@@ -59,9 +91,9 @@ nav {
     box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(40px);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 30px 40px;
-    border: 3px solid rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.3);
 }
 #title-ahad-alkozai {
     font: 55px "Roboto Slab"
@@ -236,7 +268,6 @@ nav {
     /* background-color: rgb(16, 147, 138); */
     color: white;
     padding-bottom: 50px;
-    height: 1000px;
 }
 #skills-list {
     display: flex;
@@ -246,7 +277,7 @@ nav {
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1050px;
+    width: 1050px;
     border-radius: 10px;
     border: 2px solid rgb(255, 255, 255, 0.2);
     padding: 20px 20px;
@@ -267,8 +298,235 @@ nav {
     }
 }
 
-
-
+#profile-page {
+    color: white;
+    padding-bottom: 50px;
+}
+#profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1050px;
+    padding: 25px 25px;
+}
+#profile-me {
+    padding: 25px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    width: fit-content;
+    height: 340px;
+    #profile-pic {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 0% 0%;
+        border-radius: 25px;
+        border: 2px solid rgb(0, 0, 0);
+        margin-bottom: 10px;
+    }
+    #profile-name {
+        font: 25px "Ubuntu";
+        margin: 3px;
+    }
+    #profile-position {
+        font: 15px "Ubuntu";
+    }
+}
+#profile-uni-github {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 200px;
+    max-height: 390px;
+}
+#profile-uni {
+    padding: 15px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    height: 180px;
+    #profile-grad-hat {
+        width: 100px;
+    }
+    #profile-uni-text {
+        font: 22px "Ubuntu";
+    }
+}
+#profile-github {
+    padding: 15px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    max-height: fit-content;
+    #github-logo {
+        width: 80px;
+    }
+    #text {
+        margin-bottom: 10px;
+        font: 22px "Ubuntu";
+    }
+}
+#profile-compsci {
+    padding: 25px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    max-width: 210px;
+    height: 340px;
+    #coding-pic {
+        margin-top: 10px;
+        width: 200px;
+    }
+    #text {
+        font: 20px "Ubuntu";
+    }
+}
+#profile-coding {
+    padding: 25px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    max-width: 190px;
+    height: 340px;
+    #thinking-pic {
+        width: 180px;
+        left: 10px;
+        margin-top: 15px;
+    }
+    #text {
+        font: 19px "Ubuntu";
+    }
+}
+#profile-sport {
+    padding: 25px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    max-width: 210px;
+    height: 360px;
+    #profile-volleyball {
+        border: solid 2px black;
+        border-radius: 20px;
+        width: 200px;
+    }
+    #text {
+        margin-bottom: 18px;
+        font: 18px "Ubuntu";
+    }
+}
+#profile-interest {
+    padding: 25px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    width: 220px;
+    height: 360px;
+    #title {
+        font: 28px "Oswald";
+        margin-bottom: 10px;
+    }
+    #pic {
+        width: 75px;
+        border-radius: 10px;
+    }
+    #text {
+        font: 18px "Ubuntu";
+        margin-bottom: 20px;
+    }
+}
+#profile-rubiks-latte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 190px;
+    height: 416px;
+}
+#profile-rubiks {
+    padding: 14px 25px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    #rubiks-pic {
+        width: 70px;
+    }
+    #text1 {
+        font: 18px "Oswald";
+        margin-bottom: 5px;
+    }
+    #text2 {
+        font: 18px "Oswald";
+        margin-bottom: 15px;
+        text-decoration: underline;
+        text-decoration-line: solid;
+        text-underline-offset: 4px;
+    }
+}
+#profile-latte {
+    padding: 14px 25px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    #text {
+        font: 23px "Dancing Script";
+        margin-bottom: 10px;
+    }
+    #coffee-pic {
+        width: 80px;
+    }
+}
+#profile-quote {
+    padding: 25px;
+    text-align: center;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.4);
+    max-width: 190px;
+    height: 360px;
+    #marcus-pic {
+        width: 150px;
+    }
+    #text1 {
+        font: 25px "Oswald";
+        margin-bottom: 10px;
+    }
+    #text2 {
+        font: 15px "Ubuntu";
+    }
+}
 
 
 /* #home-bg {

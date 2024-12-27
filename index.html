@@ -13,25 +13,27 @@
         <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&family=LXGW+WenKai+Mono+TC&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+DE+VA+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+DE+VA+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     </head>
     <body>
+        <canvas id="canvas" class="background"> </canvas>    
 
         <section id="home-page" class="home-page"> 
+            <div id="particles-js"></div>
 
             <nav>
                 <ul id="nav-bar">
                     <li id="nav-first"><a href="#home-page">Home</a></li>
                     <li><a href="#projects-page">Projects</a></li>
                     <li><a href="#skills-page">Skills</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Profile</a></li>
+                    <li><a class="unavailable">Experience</a></li>
+                    <li><a href="#profile-page">Profile</a></li>
                     <li id="nav-last"><a href="">Contact</a></li>
                 </ul>
             </nav>
 
-            <div id="home-bg">
-                <!-- Make an animated bg -->
-            </div>
 
             <div id="home-titles">
                 <h1 id="title-ahad-alkozai">I'm Ahad Alkozai</h1>
@@ -41,7 +43,7 @@
         </section>
 
         <section id="projects-page" class="projects-page">
-
+            
             <h1 id="title-projects" class="title">Projects</h1>
             
             <section id="projects">
@@ -106,11 +108,11 @@
                             </div>
                         </header>
 
-                        <img class="proj-img" src="images/not-out.jpg">
+                        <img class="proj-img" src="images/not-out.png">
 
                         <footer class="proj-footer">
                             <div class="proj-read-more footer">
-                                <a class="link" href="#">Read More</a>
+                                <a class="link unavailable">Read More</a>
                             </div>
                             <div class="proj-github footer">
                                 <img class="github-logo" src="images/github-logo.png">
@@ -202,7 +204,87 @@
 
         </section>
         
-        
+        <section id="profile-page" class="profile-page">
+
+            <h1 id="title-profile" class="title"> Profile </h1>
+            
+            <section id="profile">
+
+                <div id="profile-me">
+                    <img id="profile-pic" src="images/pfp.jpg">
+
+                    <p id="profile-name"> Ahad Alkozai </p>
+                    <p id="profile-position"> Computer Science BSc Student</p>
+                </div>
+
+                <div id="profile-uni-github">
+                    <div id="profile-uni">
+                        <img id="profile-grad-hat" src="images/grad-hat.png">
+                        <p id="profile-uni-text"> I study at Royal Holloway University</p>
+                    </div>
+
+                    <div id="profile-github">
+                        <p id="text">My GitHub</p>
+
+                        <a class="github-link link" href="https://github.com/A-Alkozai" target="_blank">
+                            <img id="github-logo" src="images/github-logo.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="profile-compsci">
+                    <p id="text"> I chose Computer Science because I enjoy solving problems and bringing creative ideas to life. </p>
+                    <img id="coding-pic" src="images/coding.png">
+                </div>
+
+                <div id="profile-coding">
+                    <p id="text"> My journey into coding was driven by my curiosity for how everyday technology functioned. </p>
+                    <img id="thinking-pic" src="images/thinking.png">
+
+                </div> 
+
+                <div id="profile-sport">
+                    <p id="text">I enjoy playing sports and I play for the RHUL Volleyball Team</p>
+                    <img id="profile-volleyball" src="images/volleyball.png">
+                </div>
+
+                <div id="profile-interest">
+                    <p id="title"> I am interested in </p>
+
+                    <img id="pic" src="images/apps.jpg">
+                    <p id="text"> Software Engineering </p> 
+                    <img id="pic" src="images/security.png">
+                    <p id="text"> Cyber Security </p> 
+                    <img id="pic" src="images/network.png">
+                    <p id="text"> Network Engineer </p>              
+                </div>
+
+                <div id="profile-rubiks-latte">
+                    
+                    <div id="profile-rubiks">
+                        <p id="text1"> My best time </p>
+                        <p id="text2"> 42.53s </p>
+                        <img id="rubiks-pic" src="images/rubiks.png">
+                    </div>
+
+                    <div id="profile-latte">
+                        <p id="text"> Good Ideas Start with a Coffee</p>
+                        <img id="coffee-pic" src="images/coffee.png">
+                    </div>
+
+                </div>
+                
+                <div id="profile-quote">
+                    <p id="text1"> "What are you afraid of losing, when nothing in the world actually belongs to you." </p>
+                    <p id="text2"> - Marcus Aurelius </p>
+                    <img id="marcus-pic" src="images/marcus.png">
+                </div>
+
+            </section>
+
+            
+
+        </section>
         
         
         
@@ -420,6 +502,7 @@
         </section> -->
         
         <script src="index.js"></script>
-
+        <script src="particles.js-master/particles.js"></script>
+        <script src="particles.js-master/js/app.js"></script>
     </body>
 </html>
