@@ -6,285 +6,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ahad's Portfolio</title>
 
-        <!-- Stylesheet -->
-        <link rel="stylesheet" href="index.css">
-
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&family=LXGW+WenKai+Mono+TC&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+DE+VA+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+DE+VA+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+DE+VA+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="styles/modern-normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/components/header.css">
+        <link rel="stylesheet" href="styles/components/background.css">
+        <link rel="stylesheet" href="styles/components/home.css">
+        <link rel="stylesheet" href="styles/utils.css">
     </head>
     <body>
-        <canvas id="canvas" class="background"> </canvas>    
-
-        <section id="home-page" class="home-page"> 
-            <div id="particles-js"></div>
-
+        <header class="header container">
             <nav>
-                <ul id="nav-bar">
-                    <li id="nav-first"><a href="#home-page">Home</a></li>
-                    <li><a href="#projects-page">Projects</a></li>
-                    <li><a href="#skills-page">Skills</a></li>
-                    <li><a class="unavailable">Experience</a></li>
-                    <li id="nav-last"><a href="#profile-page">Profile</a></li>
+                <ul class="header__nav glass--white">
+                    <li>
+                        <a class="header__link" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#profile">Profile</a>
+                    </li>
                 </ul>
             </nav>
-
-
-            <div id="home-titles">
-                <h1 id="title-ahad-alkozai">I'm Ahad Alkozai</h1>
-                <h1 id="title-cs-student">A Computer Science Student</h1>
+        </header>
+        <section class="background">
+            <div id="particles-js"></div>
+        </section>
+        <section class="home container section">
+            <div class="home__titles glass--black">
+                <h1 class="home__title">I'm Ahad Alkozai</h1>
+                <h4 class="home__subtitle">A Computer Science Student</h4>
             </div>
-
         </section>
 
-        <section id="projects-page" class="projects-page">
-            
-            <h1 id="title-projects" class="title">Projects</h1>
-            
-            <section id="projects">
-                
-                <div class="project">
-                    <header class="proj-header">
-                        <h1 class="proj-title">Dream Dimension</h1>
-                        <div class="proj-made-with">
-                            <img class="proj-logo" src="images/python-logo.png">
-                        </div>
-                    </header>
+        <!-- <section></section> -->
+        <!-- <section></section> -->
+        <!-- <section></section> -->
+        <!-- <section></section> -->
 
-                    <main class="proj-info">
-                        <p>Created a side platform fighting game using Python's SimpleGUI library, demonstrating skills in game development, algorithms, and UI design. Key features include dynamic player controls, collision detection, and combat mechanics, smooth and visually appealing character animations, and intelligent enemy AI with tracking, attacking, and platform navigation capabilities for challenging gameplay.</p>
-                    </main>
-                    
-                    <footer class="proj-footer">
-                        <div class="proj-read-more footer">
-                            <a class="link unavailable">Read More</a>
-                        </div>
-                        <div class="proj-github footer">
-                            <img class="github-logo" src="images/github-logo.png">
-                            <a class="github-link link" href="https://github.com/A-Alkozai/Game_Project_Yr1">Visit Repository</a>
-                        </div>
-                    </footer>
-
-                    <img class="proj-img" src="images/python-game.png">
-                </div>
-
-                <div class="project-mini">
-                    
-                    <div class="proj-mini-1">
-                        <header class="proj-header">
-                            <h1 class="proj-title">Personal Website</h1>
-                            <div class="proj-made-with">
-                                <img class="proj-logo" src="images/html-logo.png">
-                                <img class="proj-logo" src="images/css-logo.png">
-                                <img class="proj-logo" src="images/js-logo.png">
-                            </div>
-                        </header>
-
-                        <img class="proj-img" src="images/personal-website.png">
-
-                        <footer class="proj-footer">
-                            <div class="proj-read-more footer">
-                                <a class="link unavailable">Read More</a>
-                            </div>
-                            <div id="this-website-footer" class="proj-link footer">
-                                <a id="this-website-link" class="link">Visit Website</a>
-                            </div>
-                        </footer>
-
-                    </div>
-
-                    <div class="proj-mini-1">
-                        <header class="proj-header">
-                            <h1 class="proj-title">Fitness App</h1>
-                            <div class="proj-made-with">
-                                <img class="proj-logo" src="images/html-logo.png">
-                                <img class="proj-logo" src="images/css-logo.png">
-                                <img class="proj-logo" src="images/js-logo.png">
-                            </div>
-                        </header>
-
-                        <img class="proj-img" src="images/not-out.png">
-
-                        <footer class="proj-footer">
-                            <div class="proj-read-more footer">
-                                <a class="link unavailable">Read More</a>
-                            </div>
-                            <div class="proj-github footer">
-                                <img class="github-logo" src="images/github-logo.png">
-                                <a class="github-link link" href="https://github.com/A-Alkozai/fitness-app">Visit Repository</a>
-                            </div>
-                        </footer>
-
-                    </div>
-
-                </div>
-
-                <!-- <div class="project">
-                    <header class="proj-header">
-                        <h1 class="proj-title">Dream Dimension</h1>
-                        <div class="proj-made-with">
-                            <img class="proj-logo" src="images/python-logo.png">
-                            <img class="proj-logo" src="images/python-logo.png">
-                        </div>
-                    </header>
-
-                    <main class="proj-info">
-                        <p>Created a side platform fighting game using Python's SimpleGUI library, demonstrating skills in game development, algorithms, and UI design. Key features include dynamic player controls, collision detection, and combat mechanics, smooth and visually appealing character animations, and intelligent enemy AI with tracking, attacking, and platform navigation capabilities for challenging gameplay.</p>
-                    </main>
-                    
-                    <footer class="proj-footer">
-                        <div class="proj-read-more footer">
-                            <a class="link" href="#">Read More</a>
-                        </div>
-                        <div class="proj-github footer">
-                            <img class="github-logo" src="images/github-logo.png">
-                            <a class="github-link link" href="https://github.com/A-Alkozai/Game_Project_Yr1">Visit Repository</a>
-                        </div>
-                    </footer>
-
-                    <img class="proj-img" src="images/python-game.png">
-                </div> -->
-
-            </section>
-            
-        </section>
-        
-        <section id="skills-page" class="skills-page">
-
-            <h1 id="title-skills" class="title">Skills</h1>
-
-            <div id="skills-list">
-
-                <div class="skill">
-                    <img class="skill-img" src="images/python-logo.png">
-                    <p class="skill-name"> Python </p>
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img" src="images/java-logo.png">
-                    <p class="skill-name"> Java </p>
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img" src="images/html-logo.png">
-                    <p class="skill-name"> HTML </p>
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img" src="images/css-logo.png">
-                    <p class="skill-name"> CSS </p>
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img" src="images/js-logo.png">
-                    <p class="skill-name"> JS </p>
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img" src="images/git-logo.png">
-                    <p class="skill-name"> Git </p>
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img" src="images/postgresql-logo.png">
-                    <p class="skill-name"> PostgreSQL </p>
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img" src="images/maven-logo.png">
-                    <p class="skill-name"> Maven </p>
-                </div>
-
-            </div>
-
-        </section>
-        
-        <section id="profile-page" class="profile-page">
-
-            <h1 id="title-profile" class="title"> Profile </h1>
-            
-            <section id="profile">
-
-                <div id="profile-me">
-                    <img id="profile-pic" src="images/pfp.jpg">
-
-                    <p id="profile-name"> Ahad Alkozai </p>
-                    <p id="profile-position"> Computer Science BSc Student</p>
-                </div>
-
-                <div id="profile-uni-github">
-                    <div id="profile-uni">
-                        <img id="profile-grad-hat" src="images/grad-hat.png">
-                        <p id="profile-uni-text"> I study at Royal Holloway University</p>
-                    </div>
-
-                    <div id="profile-github">
-                        <p id="text">My GitHub</p>
-
-                        <a class="github-link link" href="https://github.com/A-Alkozai" target="_blank">
-                            <img id="github-logo" src="images/github-logo.png">
-                        </a>
-                    </div>
-                </div>
-
-                <div id="profile-compsci">
-                    <p id="text"> I chose Computer Science because I enjoy solving problems and bringing creative ideas to life. </p>
-                    <img id="coding-pic" src="images/coding.png">
-                </div>
-
-                <div id="profile-coding">
-                    <p id="text"> My journey into coding was driven by my curiosity for how everyday technology functioned. </p>
-                    <img id="thinking-pic" src="images/thinking.png">
-
-                </div> 
-
-                <div id="profile-sport">
-                    <p id="text">I enjoy playing sports and I play for the RHUL Volleyball Team</p>
-                    <img id="profile-volleyball" src="images/volleyball.png">
-                </div>
-
-                <div id="profile-interest">
-                    <p id="title"> I am interested in </p>
-
-                    <img id="pic" src="images/apps.jpg">
-                    <p id="text"> Software Engineering </p> 
-                    <img id="pic" src="images/security.png">
-                    <p id="text"> Cyber Security </p> 
-                    <img id="pic" src="images/network.png">
-                    <p id="text"> Network Engineer </p>              
-                </div>
-
-                <div id="profile-rubiks-latte">
-                    
-                    <div id="profile-rubiks">
-                        <p id="text1"> My best time </p>
-                        <p id="text2"> 42.53s </p>
-                        <img id="rubiks-pic" src="images/rubiks.png">
-                    </div>
-
-                    <div id="profile-latte">
-                        <p id="text"> Good Ideas Start with a Coffee</p>
-                        <img id="coffee-pic" src="images/coffee.png">
-                    </div>
-
-                </div>
-                
-                <div id="profile-quote">
-                    <p id="text1"> "What are you afraid of losing, when nothing in the world actually belongs to you." </p>
-                    <p id="text2"> - Marcus Aurelius </p>
-                    <img id="marcus-pic" src="images/marcus.png">
-                </div>
-
-            </section>
-
-        </section>
-
-       
-        <script src="index.js"></script>
+        <script src="src/main.js"></script>
         <script src="particles.js-master/particles.js"></script>
         <script src="particles.js-master/js/app.js"></script>
     </body>

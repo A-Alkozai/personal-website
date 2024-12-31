@@ -1,0 +1,21 @@
+.background {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: fit-content;
+    border: 1px solid greenyellow;
+    z-index: 0;
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    .background {
+        top: 0%;
+        max-height: 100vh;
+    }
+}
