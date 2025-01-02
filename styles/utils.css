@@ -11,6 +11,13 @@
     margin-top: 6rem;
 }
 
+.title {
+    text-align: center;
+    font-size: var(--size-4xl);
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
 .glass--white {
     background-color: var(--clr-white-glass);
     border: 1px solid var(--clr-glass-border);

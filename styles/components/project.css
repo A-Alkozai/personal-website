@@ -44,7 +44,7 @@
     margin-bottom: 0.5rem;
 }
 
-.project__title {
+.project__name {
     font-size: var(--size-2xl);
     text-decoration: underline;
     text-underline-offset: 0.3rem;
@@ -150,7 +150,7 @@
 
 /* xl */
 @media (min-width: 1280px) {
-    .project__title {
+    .project__name {
         font-size: var(--size-3xl);
     }
     .project__element__inner {
