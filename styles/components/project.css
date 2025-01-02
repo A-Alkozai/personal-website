@@ -24,6 +24,7 @@
 }
 
 .project--mini__element {
+    width: 90%;
     border-radius: 10px;
     margin-inline: 5%;
     padding: 1rem;
@@ -63,6 +64,7 @@
     width: var(--size-3xl);
     background-color: black;
     border-radius: 10px;
+    padding: 2%;
 }
 
 .project__main {

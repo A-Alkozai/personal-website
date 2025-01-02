@@ -26,10 +26,10 @@
                         <a class="header__link" href="#home">Home</a>
                     </li>
                     <li>
-                        <a class="header__link" href="#projects">Projects</a>
+                        <a class="header__link" href="#project">Projects</a>
                     </li>
                     <li>
-                        <a class="header__link" href="#skills">Skills</a>
+                        <a class="header__link" href="#skill">Skills</a>
                     </li>
                     <li>
                         <a class="header__link" href="#experience">Experience</a>
@@ -43,13 +43,13 @@
         <section class="background">
             <div id="particles-js"></div>
         </section>
-        <section class="home container section">
+        <section class="home container section" id="home">
             <div class="home__titles glass--black blur">
                 <h1 class="home__title">I'm Ahad Alkozai</h1>
                 <h4 class="home__subtitle">A Computer Science Student</h4>
             </div>
         </section>
-        <section class="project container section">
+        <section class="project container section" id="project">
             <div class="project__element glass--white">
                 <div class="project__element__inner">
                     <header class="project__header">
@@ -63,8 +63,10 @@
                         <p>Created a side platform fighting game using Python's SimpleGUI library, demonstrating skills in game development, algorithms, and UI design. Key features include dynamic player controls, collision detection, and combat mechanics, smooth and visually appealing character animations, and intelligent enemy AI with tracking, attacking, and platform navigation capabilities for challenging gameplay.</p>
                     </main>
                     <footer class="project__footer">
-                        <button class="project__more button--glass">Read More</button>
-                        <button class="project__repo button--glass">Visit Repository</button>
+                        <button class="project__button--more button--glass unavailable">Read More</button>
+                        <a href="https://github.com/A-Alkozai/dream-dimension" target="_blank">
+                            <button class="project__button--repo button--glass">Visit Repository</button>
+                        </a>
                     </footer>
                 </div>
                 <div class="project__image__container">
@@ -74,39 +76,53 @@
             <div class="project--mini">
                 <div class="project--mini__element glass--white">
                     <header class="project--mini__header">
-                        <h1 class="project__title"> Dream Dimension </h1>
+                        <h1 class="project__title"> Personal Website </h1>
                         <div class="project__icon__container glass--grey">
-                            <img class="project__icon" src="/images/python-logo.png">
-                            <img class="project__icon" src="/images/python-logo.png">
+                            <img class="project__icon" src="/images/html-logo.png">
+                            <img class="project__icon" src="/images/css-logo.png">
+                            <img class="project__icon" src="/images/js-logo.png">
                         </div>  
                     </header>
                     <main class="project__main glass--grey">
-                        <p>Created a side platform fighting game using Python's SimpleGUI library, demonstrating skills in game development, algorithms, and UI design. Key features include dynamic player controls, collision detection, and combat mechanics, smooth and visually appealing character animations, and intelligent enemy AI with tracking, attacking, and platform navigation capabilities for challenging gameplay.</p>
+                        <p>A minimalist personal website crafted using pure HTML, CSS, and JavaScript. It showcases a clean and responsive design, highlighting my projects, skills, and profile. Every element has been custom-built without frameworks, reflecting attention to detail and a deep understanding of core web technologies.</p>
                     </main>
                     <footer class="project__footer">
-                        <button class="project__more button--glass">Read More</button>
-                        <button class="project__repo button--glass">Visit Repository</button>
+                        <button class="project__button--more button--glass unavailable">Read More</button>
+                        <button class="project__button--website button--glass">Visit Website</button>
                     </footer>
                 </div>
                 <div class="project--mini__element glass--white">
                     <header class="project--mini__header">
-                        <h1 class="project__title"> Dream Dimension </h1>
+                        <h1 class="project__title"> Fitness App </h1>
                         <div class="project__icon__container glass--grey">
-                            <img class="project__icon" src="/images/python-logo.png">
-                            <img class="project__icon" src="/images/python-logo.png">
+                            <img class="project__icon" src="/images/html-logo.png">
+                            <img class="project__icon" src="/images/css-logo.png">
+                            <img class="project__icon" src="/images/js-logo.png">
                         </div>  
                     </header>
                     <main class="project__main glass--grey">
-                        <p>Created a side platform fighting game using Python's SimpleGUI library, demonstrating skills in game development, algorithms, and UI design. Key features include dynamic player controls, collision detection, and combat mechanics, smooth and visually appealing character animations, and intelligent enemy AI with tracking, attacking, and platform navigation capabilities for challenging gameplay.</p>
+                        <p>In progress, so enjoy this nice text art</p>
+                        <pre style="font-size: 7px;">⠈⠙⠲⢶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣿⡀⠀⠀⠀⠀⠀⠀⠀⡄⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⣼⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣿⠟⠓⠉
+⠀⠀⠀⠀⠈⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⢀⣧⣶⣦⣇⠀⠀⠀⠀⠀⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣶⣾⣿⣿⣿⣿⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠛⠛⠛⠛⠛⠛⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠟⠛⠛⠛⠛⠛⠛⠃⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</pre>
                     </main>
                     <footer class="project__footer">
-                        <button class="project__more button--glass">Read More</button>
-                        <button class="project__repo button--glass">Visit Repository</button>
+                        <button class="project__button--more button--glass unavailable">Read More</button>
+                        <button class="project__button--repo button--glass">Visit Repository</button>
                     </footer>
                 </div>
             </div>
         </section>
-        <!-- <section></section> -->
+        <section class="container section" id="skill">
+
+        </section>
         <!-- <section></section> -->
         <!-- <section></section> -->
 

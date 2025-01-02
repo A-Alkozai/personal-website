@@ -79,7 +79,7 @@ button {
     border: none;
     background: none;
     cursor: pointer;
-    color: inherit;
+    color: var(--clr-slate200);
 }
 
 

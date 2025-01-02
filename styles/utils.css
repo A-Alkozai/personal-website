@@ -51,6 +51,10 @@
     border-color: var(--clr-black-glass);
 }
 
+.unavailable {
+    cursor: not-allowed;
+}
+
 /* xs */
 @media (min-width: 475px) {
     .container {
