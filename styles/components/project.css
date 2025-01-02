@@ -3,6 +3,7 @@
     flex-direction: column;
     row-gap: 4rem;
     z-index: 1;
+    padding-top: 3rem;
 }
 
 .project--mini {
@@ -82,6 +83,9 @@
 
 /* xs */
 @media (min-width: 475px) {
+    .project {
+        padding-top: 5rem;
+    }
     .project__icon {
         width: var(--size-4xl);
     }
@@ -107,6 +111,9 @@
 
 /* md */
 @media (min-width: 768px) {
+    .project {
+        padding-top: 10rem;
+    }
     .project__footer {
         font-size: var(--size-xl);
     }
@@ -114,6 +121,9 @@
 
 /* lg */
 @media (min-width: 1024px) {
+    .project {
+        padding-top: 14rem;
+    }
     .project--mini {
         display: flex;
         flex-direction: row;

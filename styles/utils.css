@@ -4,7 +4,6 @@
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: 1px solid red;
 }
 
 .section {
@@ -34,14 +33,6 @@
     border: 1px solid var(--clr-glass-border);
 }
 
-.blur {
-    backdrop-filter: blur(5px);
-}
-
-.shadow {
-    box-shadow: 10px 10px 10px var(--clr-black-glass);
-}
-
 .button--glass {
     background-color: var(--clr-grey-glass);
     border: 1px solid var(--clr-glass-border);
@@ -58,8 +49,28 @@
     border-color: var(--clr-black-glass);
 }
 
+.blur {
+    backdrop-filter: blur(5px);
+}
+
+.shadow {
+    box-shadow: 10px 10px 10px var(--clr-black-glass);
+}
+
+.border {
+    border: 2px solid var(--clr-black-glass);
+}
+
 .unavailable {
     cursor: not-allowed;
+}
+
+.font--oswald {
+    font-family: "Oswald";
+}
+
+.font--cursive {
+    font-family: "Dancing Script";
 }
 
 /* xs */
@@ -86,6 +97,9 @@
     }
     .section {
         margin-top: 7rem;
+    }
+    .title {
+        font-size: var(--size-5xl);
     }
 }
 

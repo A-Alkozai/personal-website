@@ -8,6 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+DE+VA+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+DE+VA+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playwrite+DE+VA+Guides&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="styles/modern-normalize.css">
@@ -17,6 +19,7 @@
         <link rel="stylesheet" href="styles/components/home.css">
         <link rel="stylesheet" href="styles/components/project.css">
         <link rel="stylesheet" href="styles/components/skill.css">
+        <link rel="stylesheet" href="styles/components/profile.css">
         <link rel="stylesheet" href="styles/utils.css">
     </head>
     <body>
@@ -33,7 +36,7 @@
                         <a class="header__link" href="#skill">Skills</a>
                     </li>
                     <li>
-                        <a class="header__link" href="#experience">Experience</a>
+                        <a class="header__link unavailable">Experience</a>
                     </li>
                     <li>
                         <a class="header__link" href="#profile">Profile</a>
@@ -159,8 +162,80 @@
                 </div>
             </div>
         </section>
-        <!-- <section></section> -->
-        <!-- <section></section> -->
+        <section class="profile container section" id="profile">
+            <h1 class="title">Profile</h1>
+            <div class="profile__container">
+                <div class="profile__group">
+                    <div class="profile__element glass--white">
+                        <img class="profile__image border" src="images/pfp.jpg">
+                        <div>
+                            <p>Ahad Alkozai</p>
+                            <p>Computer Science BSc Student</p>
+                        </div>
+                    </div>
+                    <div class="profile__group--mini">
+                        <div class="profile__element--mini glass--white">
+                            <img class="profile__image--medium" src="images/grad-hat.png">
+                            <p>I study at Royal Holloway University</p>
+                        </div>
+                        <div class="profile__element--mini glass--white">
+                            <p>My GitHub</p>
+                            <a class="profile__link" href="https://github.com/A-Alkozai" target="_blank">
+                                <img class="profile__image--medium" src="images/github-logo.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__group">
+                    <div class="profile__element glass--white">
+                        <p>I chose Computer Science because I enjoy solving problems and bringing creative ideas to life.</p>
+                        <img class="profile__image" src="images/coding.png">
+                    </div>
+                    <div class="profile__element glass--white">
+                        <p>My journey into coding was driven by my curiosity for how everyday technology functioned.</p>
+                        <img class="profile__image" src="images/thinking.png">
+                    </div>
+                </div>
+                <div class="profile__group">
+                    <div class="profile__element--large glass--white">
+                        <p>I enjoy playing sports and I play for the RHUL Volleyball Team.</p>
+                        <img class="profile__image border" src="images/volleyball.png">
+                    </div>
+                    <div class="profile__element glass--white">
+                        <h3>My Interests</h3>
+                        <img class="profile__image--mini" src="images/apps.jpg">
+                        <p>Software <br> Engineering</p>
+                        <img class="profile__image--mini" src="images/security.png">
+                        <p>Cyber <br> Security</p>
+                        <img class="profile__image--mini" src="images/network.png">
+                        <p>Network <br> Engineering</p>
+                    </div>
+                </div>
+                <div class="profile__group">
+                    <div class="profile__group--mini">
+                        <div class="profile__element--mini glass--white">
+                            <div>
+                                <p>My best time</p>
+                                <p>42.53s</p>
+                            </div>
+                            <img class="profile__image--medium" src="images/rubiks.png">
+                        </div>
+                        <div class="profile__element--mini glass--white">
+                            <h3 class="font--cursive">Good Ideas Start with a Coffee</h3>
+                            <img class="profile__image--medium" src="images/coffee.png">
+                        </div>
+                    </div>
+                    <div class="profile__element glass--white">
+                        <div>
+                            <h3 class="font--oswald">"What are you afraid of losing, when nothing in the world actually belongs to you."</h3>
+                            <br>
+                            <p>- Marcus Aurelius</p>
+                        </div>
+                        <img class="profile__image" src="images/marcus.png">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <script src="src/main.js"></script>
         <script src="particles.js-master/particles.js"></script>
