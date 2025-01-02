@@ -5,7 +5,6 @@
     transform: translateX(-50%);
     width: 100%;
     height: fit-content;
-    border: 1px solid greenyellow;
     z-index: 0;
 }
 

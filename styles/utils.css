@@ -14,16 +14,41 @@
 .glass--white {
     background-color: var(--clr-white-glass);
     border: 1px solid var(--clr-glass-border);
-    box-shadow: 10px 10px 10px var(--clr-black-glass);
-    backdrop-filter: blur(40px);
 }
 
 .glass--black {
     background-color: var(--clr-black-glass);
-    border: 2px solid var(--clr-glass-border);
-    box-shadow: 10px 10px 10px var(--clr-black-glass);
-    backdrop-filter: blur(40px);
+    border: 1px solid var(--clr-glass-border);
     
+}
+
+.glass--grey {
+    background-color: var(--clr-grey-glass);
+    border: 1px solid var(--clr-glass-border);
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+}
+
+.shadow {
+    box-shadow: 10px 10px 10px var(--clr-black-glass);
+}
+
+.button--glass {
+    background-color: var(--clr-grey-glass);
+    border: 1px solid var(--clr-glass-border);
+    letter-spacing: -0.05em;
+    text-decoration: none;
+    padding: 0.7em 0.4em;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.button--glass:hover {
+    background-color: var(--clr-white-glass);
+    border-color: var(--clr-black-glass);
 }
 
 /* xs */

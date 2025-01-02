@@ -26,8 +26,9 @@
     --clr-rose600: #e11d48;
 
     --clr-white-glass: #ffffff33;
-    --clr-glass-border: #ffffff4d;
     --clr-black-glass: #00000066;
+    --clr-grey-glass: #00000033;
+    --clr-glass-border: #ffffff4d;
 
     /* Sizes */
     --size-xxs: 0.5rem;
@@ -50,7 +51,6 @@
 * {
     margin: 0;
     line-height: calc(1em + 0.5rem);
-    overflow: hidden;
 }
 
 html {
