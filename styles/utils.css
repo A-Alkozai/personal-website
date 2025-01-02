@@ -1,0 +1,134 @@
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.section {
+    margin-top: 6rem;
+}
+
+.title {
+    text-align: center;
+    font-size: var(--size-4xl);
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+.glass--white {
+    background-color: var(--clr-white-glass);
+    border: 1px solid var(--clr-glass-border);
+}
+
+.glass--black {
+    background-color: var(--clr-black-glass);
+    border: 1px solid var(--clr-glass-border);
+    
+}
+
+.glass--grey {
+    background-color: var(--clr-grey-glass);
+    border: 1px solid var(--clr-glass-border);
+}
+
+.button--glass {
+    background-color: var(--clr-grey-glass);
+    border: 1px solid var(--clr-glass-border);
+    letter-spacing: -0.05em;
+    text-decoration: none;
+    padding: 0.7em 0.4em;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.button--glass:hover {
+    background-color: var(--clr-white-glass);
+    border-color: var(--clr-black-glass);
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+}
+
+.shadow {
+    box-shadow: 10px 10px 10px var(--clr-black-glass);
+}
+
+.border {
+    border: 2px solid var(--clr-black-glass);
+}
+
+.unavailable {
+    cursor: not-allowed;
+}
+
+.font--oswald {
+    font-family: "Oswald";
+}
+
+.font--cursive {
+    font-family: "Dancing Script";
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+    .section {
+        margin-top: 6rem;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .section {
+        margin-top: 7rem;
+    }
+    .title {
+        font-size: var(--size-5xl);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    .section {
+        margin-top: 8rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+    .section {
+        margin-top: 9rem;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+    .section {
+        margin-top: 10rem;
+    }
+}
