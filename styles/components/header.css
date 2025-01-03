@@ -14,13 +14,13 @@
     display: flex;
     align-items: center;
     list-style: none;
-    padding: 0.2em 1em;
-    gap: 1.2em;
+    padding: 0.2em 0.7em;
+    gap: 0.7em;
     border-radius: 10px;
 }
 
 .header__link {
-    font-size: var(--size-sm);
+    font-size: var(--size-xs);
     color: var(--clr-text);
     font-weight: 600;
     text-decoration: none;
@@ -29,6 +29,17 @@
 
 .header__link:hover {
     color: var(--clr-rose600);
+}
+
+/* 2xs */
+@media (min-width: 365px) {
+    .header__nav {
+        padding: 0.2em 1em;
+        gap: 1.2em;
+    }
+    .header__link {
+        font-size: var(--size-sm);
+    }
 }
 
 /* xs */

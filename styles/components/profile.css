@@ -43,12 +43,11 @@
 }
 
 .profile__image--medium {
-    border-radius: 20px;
     max-width: 60%;
 }
 
 .profile__image--mini {
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: 35%;
 }
 
@@ -57,10 +56,20 @@
     justify-content: center;
 }
 
+/* 2xs */
+@media (min-width: 365px) {
+    .profile__element--mini {
+        padding: 0.7rem;
+    }
+}
+
 /* sm */
 @media (min-width: 640px) {
     .profile__element, .profile__element--mini, .profile__element--large{
         font-size: var(--size-xl);
+    }
+    .profile__element--mini {
+        padding: 1rem;
     }
 }
 

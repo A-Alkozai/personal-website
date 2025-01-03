@@ -4,6 +4,7 @@
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    border: 1px solid rgb(234, 0, 255);
 }
 
 .section {
@@ -73,10 +74,26 @@
     font-family: "Dancing Script";
 }
 
+/* 3xs */
+@media (min-width: 300px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+/* 2xs */
+@media (min-width: 365px) {
+    .container {
+        max-width: 365px;
+        border: 1px solid rgb(0, 255, 68);
+    }
+}
+
 /* xs */
 @media (min-width: 475px) {
     .container {
         max-width: 475px;
+        border: 1px solid red;
     }
 }
 
